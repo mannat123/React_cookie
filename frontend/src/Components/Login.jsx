@@ -20,7 +20,7 @@ class Login extends Component{
 
     checkAuth = () => {
         console.log("IsLoggedIn", isLoggedIn());
-        if (isLoggedIn()) {
+        if (isLoggedIn() && this.state.userLoggedIn === false) {
             this.setState({
                 userLoggedIn:true
             });
@@ -126,11 +126,9 @@ class Login extends Component{
 
 
     render(){
-        if(this.state.userLoggedIn){
-            return <Redirect to="/Users" />
-        }
         return(
             <React.Fragment>
+                {this.state.userLoggedIn && <Redirect to="/Users"/>}
                 <div className="container1">
                         <div className="topnav">
                                 <ul className="first">

@@ -96,11 +96,9 @@ class Users extends Component{
     };
 
 render(){
-    // if(this.state.userLoggedIn === false){
-    //     return <Redirect to="/Login"/>
-    // }
     return(
-        <div>
+        <React.Fragment>
+            {!this.state.userLoggedIn && <Redirect to="/Login"/>}
             <div className="container1">
                 <div className="topnav">
                         <ul className="second">
@@ -131,7 +129,7 @@ render(){
 
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     );
 }
 }
