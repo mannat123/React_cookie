@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    width: 100%;
+    margin-left:0px;
+}
+  
+*{
+    box-sizing: border-box;
+}
+
+.container1 {
+  position: absolute;
+  width:100%;
+  z-index: 100;
+  margin-top:-10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:#160026;
+    height:87px;
+    font-family: 'Patua One', cursive;
+   
+}
+.topnav a {
+    float: left;
+    color:white;
+    text-align: center;
+    padding:20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.first{
+      margin-left:70%;
+      margin-top:3px;
+}
+
+.second{
+    margin-left:75%;
+    margin-top:3px;
+}
+
+.topnav ul{
+    display: flex;
+    padding-top:10px;
+    list-style-type: none;
+}
+.topnav ul li a{
+    padding: 1rem 0;
+    margin:0 3rem;
+    position: relative;
+    letter-spacing: 2px;
+} 
+
+.topnav ul li a:last-child{
+    margin-right: 0;
+}
+
+.topnav ul li a::before,
+.topnav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color:#fa34ae;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+.topnav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+
+.topnav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+.topnav ul li a:hover::before,
+.topnav ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+h1{
+    color:#000a3e;
+    font-size:35px;
+    margin-top:10px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.Signupinput{
+  width: 100%;
+  margin:10px;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background-color:#ddd;
+  border-radius: 15px;
+  border:1px solid #000a3e; 
+  outline: none;
+}
+
+.Signupinput:hover {
+  background-color: rgb(243, 210, 210);
+  box-shadow:2px 2px 2px 3px #000a3e;
+}
+
+.Signupinput:focus {
+    background-color:rgb(243, 210, 210);
+}
+
+.labels::after{
+  content:" *";
+  color: red;
+}
+.btn {
+  position:relative;
+  left:50%;
+  transform: translate(-50%,0%);
+  background-color:#000a3e;
+  color:white;
+  font-size:15px;
+  border-radius:20px;
+  margin-top:10px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  outline:none;
+}
+.text-danger{
+  color:white;
+  font-size:14px;
+  margin-top: -50px;
+  position:absolute;
+  margin-left:320px;
+  white-space: nowrap;
+  overflow: hidden;
+  width:230px;
+  text-align: center;
+  background-color: #000a3e;
+  font-family:Arial, Helvetica, sans-serif
+}
+.text-danger1{
+  color: white;
+  font-size:14px;
+  margin-top:-60px;
+  position:absolute;
+  margin-left:320px;
+  width:230px;
+  overflow: hidden;
+  background-color:#000a3e;
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.error{
+  width: 100%;
+  margin:10px;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background-color:#ddd;
+  border-radius: 15px;
+  border:2px solid red; 
+  outline: none;
+}
+.error:hover,.error:focus{
+  background-color:rgb(243, 105, 105);
+}
+.error:focus::placeholder{
+  color:white;
+}
+
+.Logininput{
+    width: 100%;
+    margin:10px;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: #ddd;
+    border-radius: 15px;
+    outline:none;
+    border:1px solid #000a3e; 
+}
+  
+.Logininput:hover {
+    background-color: rgb(206, 201, 201);
+    box-shadow:2px 2px 2px 3px #000a3e;
+}
+
+.Logininput:focus {
+      background-color:rgb(243, 210, 210);
+      outline:none;
+}
+
+.container {
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 15%);
+    max-width: 380px;
+    height:450px;
+    padding: 40px;
+    background-color:whitesmoke;
+    color:#000a3e;
+    box-shadow:5px 20px 20px black;
+
+}
+
+.bg-img1 {
+    background-image: url("../../src/images/login1.jpg");
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin-top:-10px;
+}
+
+.loginimage{
+    height:20%;
+    width:22%;
+ }
+ 
+ p{
+    color:#000a3e;
+    font-size:40px;
+    margin-top:5px;
+    margin-bottom:10px;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 3px rgb(247, 104, 252);
+    font-family: 'Patua One', cursive;
+}
+.signupimage{
+    margin-top:-20px;
+    width:57px;
+    margin-left:10px;
+    border-radius: 70%;
+    vertical-align:text-bottom;
+
+}
+
+.hiddenusercard{
+  display:none;
+}
+
+.displayusercard{
+  display:block;
+  margin-left: auto;
+  margin-right:auto;
+  width: 500px;
+  height:150px;
+  background:#ff43b7;
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 10px rgba(0,0,0,1);
+  cursor: pointer;
+  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+  overflow: hidden;
+  position: relative;
+  border-radius:0 50px 0 50px;
+  padding-bottom:20px;
+  padding-top:20px;
+}
+
+.displayusercard p{
+  font-size:25px;
+  margin-left:20px;
+}
+
+.btn1{
+  background-color:#000a3e;
+  color:white;
+  font-size:16px;
+  outline:none;
+  height:60px;
+  width:12%;
+}
+
+.displayusers{
+  display:inline-block;
+  margin:28px;
+  width: 250px;
+  height:150px;
+  background:#ff43b7;
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 10px rgba(0,0,0,1);
+  cursor: pointer;
+  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+  overflow: hidden;
+  position: relative;
+  border-radius:0 50px 0 50px;
+  padding-bottom:20px;
+  padding-top:20px;
+}
+
+.hiddenusers{
+  display:none
+}
+
+.displayusers p{
+  font-size:26px;
+  margin-left:23px;
+  margin-top:0;
+}
